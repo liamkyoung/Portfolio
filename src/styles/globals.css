@@ -24,7 +24,7 @@
   }
 
   .inputField {
-    @apply rounded-lg bg-portfolio text-white font-light p-1 min-w-full font-paytone;
+    @apply rounded-lg bg-portfolio text-white font-light p-1 font-paytone;
   }
 
   .skillIcons {
@@ -96,7 +96,7 @@
   }
 
   .speechTriangleLeft {
-    content: "";
+    content: '';
     width: 0px;
     height: 0px;
     position: absolute;
@@ -109,7 +109,7 @@
   }
 
   .speechTriangleBottom {
-    content: "";
+    content: '';
     position: absolute;
     top: 98%;
     left: 48%;

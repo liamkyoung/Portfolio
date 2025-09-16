@@ -21,7 +21,6 @@ function MainContent() {
         <div className="px-8">
           <AboutPic />
           <div className="pt-5">
-            <Timer />
             <Interests />
             <div className="mt-5 mb-5 border-t-2 border-b-2 px-8 py-8 text-lg text-center">
               <h1 className="font-notable text-3xl">Contact Me</h1>

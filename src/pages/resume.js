@@ -38,7 +38,7 @@ function resume() {
             title="Resume"
             width="95%"
             height="90%"
-            src="https://drive.google.com/file/d/1uuQXYnbgxNLS_KeD6QTaVMO9jxr35b1g/preview"
+            src="https://drive.google.com/file/d/1CGF-_jY3AhVz4jGawwMZB8fPRYB9uJWO/preview"
           />
         </div>
       </div>

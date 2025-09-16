@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 function Project({ image, title, frameworks, desc, code, site, video }) {
   return (
@@ -11,37 +11,41 @@ function Project({ image, title, frameworks, desc, code, site, video }) {
           {frameworks}
         </h2>
         <p className="text-lg font-reem py-6">{desc}</p>
-        <div className="flex justify-center pb-5">
-          <Link href={code} passHref>
-            <h1 className="button">{"<code>"}</h1>
-          </Link>
-          <Link href={site} passHref>
-            <h1 className="button">{"<site>"}</h1>
-          </Link>
-          <Link href={video} passHref prefetch={false}>
-            <button className="button" disabled={video === ""}>
-              {"<video>"}
-            </button>
-          </Link>
+        <div className="flex pb-5">
+          {code && (
+            <Link href={code} passHref>
+              <button className="button">{'<code>'}</button>
+            </Link>
+          )}
+          {site && (
+            <Link href={site} passHref>
+              <button className="button">{'<site>'}</button>
+            </Link>
+          )}
+          {video && (
+            <Link href={video} passHref prefetch={false}>
+              <button className="button">{'<video>'}</button>
+            </Link>
+          )}
         </div>
       </div>
       <div className="xl:flex cursor-pointer m-4 flex-end">
         <Link href={site} passHref target="_blank">
-          <div className="rounded-2xl p-2 xl:p-0 w-full">
+          <div className="rounded-2xl p-8 xl:p-0 w-full">
             <Image
               src={image}
               alt="project-image"
               objectFit="contain"
-              height="800px"
-              width="1200px"
-              className="rounded-2xl min-w-full"
+              height="600px"
+              width="600px"
+              className="rounded-2xl"
               priority
             />
           </div>
         </Link>
       </div>
     </div>
-  );
+  )
 }
 
-export default Project;
+export default Project
